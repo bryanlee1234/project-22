@@ -49,19 +49,22 @@ function draw() {
   if(star.y > 470){
 	Body.setStatic(starBody,true);}
 
-	drawSprites();
-
-}
-
-function keyPressed(){
-	if(keyCode === RIGHT_ARROW){  
+	if(keyDown(RIGHT_ARROW)){  
 		fairy.x = fairy.x + 20;
  }
 
 
- if (keyCode === LEFT_ARROW) {
-	 Body.setStatic(starBody,false); 
+ if (keyDown(LEFT_ARROW)){  
+	fairy.x = fairy.x - 20;
  }
+
+ if (keyDown(space)){  
+	Body.setStatic(starBody,false);
+ }
+
+	drawSprites();
+
 }
+
 
 
