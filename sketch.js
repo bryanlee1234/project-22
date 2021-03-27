@@ -54,11 +54,11 @@ function draw() {
  }
 
 
- if (keyDown(LEFT_ARROW)){  
-	fairy.x = fairy.x - 20;
- }
+ //if (keyDown(LEFT_ARROW)){  
+//	fairy.x = fairy.x - 20;
+// }
 
- if (keyDown(space)){  
+ if (keyDown(LEFT_ARROW)){  
 	Body.setStatic(starBody,false);
  }
 
